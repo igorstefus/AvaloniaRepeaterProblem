@@ -40,10 +40,10 @@ namespace RepeaterProblem.Views
             //This will not work.
             item.BringIntoView();
 
-            //If you just post BringIntoView to wait for layout pass to finish it will not work.
+            //If you just post BringIntoView it will not work.
             //Dispatcher.UIThread.Post(item.BringIntoView);
 
-            //If you force layout update it will work fine.
+            //If you force layout update it will work.
             //if (VisualRoot is TopLevel top)
             //{
             //    top.LayoutManager.ExecuteLayoutPass();
@@ -52,7 +52,6 @@ namespace RepeaterProblem.Views
             //item.BringIntoView();
 
             //Waiting for layout pass to happend will work.
-            //Dispatcher.UIThread.Post(item.BringIntoView);
             //void OnLayoutUpdate(object s, EventArgs e2)
             //{
             //    item.BringIntoView();
